@@ -1,12 +1,16 @@
 body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     margin:0;
-    background-image: url(https://images.unsplash.com/photo-1518976024611-28bf4b48222e?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #E4E4E4;
 }
 
 .container{
+    padding: 2em;
     background-color: white;
+    max-width: 1000px;
     min-height:100vh;
     border-radius: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -15,32 +19,90 @@ body{
 }
 
 .task-area{
-    border: 1px solid lightgray;
-    margin-top: 2em;
+    border: 3px solid #F5F5F6;
+    margin-top: 1em;
+    border-radius: 10px;
 }
 
 .task-tabs{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 3px solid #F5F5F6;
     position: relative;
 }
 
 .task-tabs div{
-    padding:1em;
+    padding:1.2em;
 }
 
 #under-line{
     height: 4px;
-    background-color: darkgreen;
+    background-color: #4CAD45;
     position: absolute;
-    width:80px;
+    width:60px;
     left:0px;
-    top:52px;
+    top:58px;
     padding: 0px;
+    border-radius: 10px;
 }
 
 .task{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    align-items: center;
+    width: 100%;
+}
+
+
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgray;
+}
+
+button{
+    margin: 0.6em;
+    height: 3em;
+    border: none;
+    width: 3em;
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+.task span{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.trashcan{
+    margin-right:2em;
+}
+
+input{
+    padding:1em;
+    border: 3px solid #F5F5F6;
+    height: 3.5em;
+    border-radius: 10px;
+}
+
+.fa-check{
+    color: #9FA0AE;
+}
+
+.fa-trash{
+    color: #9FA0AE;
+}
+
+h1{
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.no-space{
+    display: flex;
+}
+
+#add-button{
+    width: 3.5em;
+    height: 3.5em;
 }
