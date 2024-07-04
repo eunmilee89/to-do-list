@@ -4,7 +4,9 @@ body{
     font-weight: <weight>;
     font-style: normal;
     margin:0;
-    background-color: #E4E4E4;
+    background-image:url(https://i.pinimg.com/originals/e4/33/03/e43303729421ba43dea9b4b3d9ff9eb7.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .container{
@@ -38,11 +40,12 @@ body{
     height: 4px;
     background-color: #4CAD45;
     position: absolute;
-    width:60px;
+    width:57px;
     left:0px;
-    top:58px;
+    top:62px;
     padding: 0px;
     border-radius: 10px;
+    transition: 0.5s
 }
 
 .task{
@@ -50,12 +53,14 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color: white;
 }
 
 
 .task-done{
     text-decoration: line-through;
     background-color: lightgray;
+       
 }
 
 button{
@@ -79,6 +84,7 @@ button{
 input{
     padding:1em;
     border: 3px solid #F5F5F6;
+    width: 30em;
     height: 3.5em;
     border-radius: 10px;
 }
@@ -113,4 +119,41 @@ h1{
 
 .no-space button:nth-child(2):hover{
     background-color: #E79FA0;
+}
+
+.task-tabs div{
+    cursor:pointer;
+}
+
+@media (max-width: 800px) {
+    .container{
+        border-radius: 0px;
+        min-height: 90vh;
+        background-image: url(https://i.pinimg.com/originals/02/0f/20/020f205d35ce4d34e06cc785f757bd62.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+    input{
+        width : 12em;
+        height: 3em;
+    }
+
+    h1{
+        font-size : 1.5em;
+    }
+
+    #add-button{
+        width: 3em;
+        height: 3em;
+    }
+
+    body{
+        font-size: 14px;
+    }
+    
+    #under-line{
+        top:55px;
+        width:50px;
+    }
 }
